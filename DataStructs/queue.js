@@ -33,11 +33,12 @@ class Queue {
     return removedNode;
   }
 }
-const queue = new Queue;
-console.log(queue.enqueue('FIRST'))
-console.log(queue.enqueue('SECOND'))
-console.log(queue.enqueue('THIRD'))
-console.log(queue.dequeue())
-console.log(queue.dequeue())
-console.log(queue.dequeue())
-console.log(queue.dequeue())
+module.exports = Queue;
+// const queue = new Queue;
+// console.log(queue.enqueue('FIRST'))
+// console.log(queue.enqueue('SECOND'))
+// console.log(queue.enqueue('THIRD'))
+// console.log(queue.dequeue())
+// console.log(queue.dequeue())
+// console.log(queue.dequeue())
+// console.log(queue.dequeue())
