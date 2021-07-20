@@ -26,12 +26,11 @@ class Stack {
     if (this.size === 0) return;
     const removedNode = this.first;
     if (this.size === 1) {
-        this.first = null;
-        this.last = null;
-    }else {
-        this.first = removedNode.next;
-        removedNode.next = null;
-
+      this.first = null;
+      this.last = null;
+    } else {
+      this.first = removedNode.next;
+      removedNode.next = null;
     }
 
     this.size--;
@@ -47,3 +46,4 @@ console.log(stack.pop());
 console.log(stack.pop());
 console.log(stack.pop());
 console.log(stack.pop());
+module.exports = Stack;
