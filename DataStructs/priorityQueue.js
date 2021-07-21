@@ -46,7 +46,7 @@ class PriorityQueue {
       this.values[0] = end;
       this.sinkDown();
     }
-    return max;
+    return min;
   }
   sinkDown() {
     let idx = 0;
@@ -78,18 +78,19 @@ class PriorityQueue {
     }
   }
 }
+module.exports = PriorityQueue;
 const heap = new PriorityQueue();
-console.log(heap.enqueue("Hello my name is bob", 41));
-console.log(heap.enqueue("bruh", 39));
-console.log(heap.enqueue("number three here", 33));
-console.log(heap.enqueue("where am I?", 18));
-console.log(heap.enqueue(true, 27));
-console.log(heap.enqueue("possibly mistaken", 12));
-console.log(heap.enqueue(false, 55));
-console.log(heap.dequeue());
-console.log(heap.dequeue());
-console.log(heap.dequeue());
-console.log(heap.dequeue());
-console.log(heap.dequeue());
-console.log(heap.dequeue());
-console.log(heap.values);
+// console.log(heap.enqueue("Hello my name is bob", 41));
+// console.log(heap.enqueue("bruh", 39));
+// console.log(heap.enqueue("number three here", 33));
+// console.log(heap.enqueue("where am I?", 18));
+// console.log(heap.enqueue(true, 27));
+// console.log(heap.enqueue("possibly mistaken", 12));
+// console.log(heap.enqueue(false, 55));
+// console.log(heap.dequeue());
+// console.log(heap.dequeue());
+// console.log(heap.dequeue());
+// console.log(heap.dequeue());
+// console.log(heap.dequeue());
+// console.log(heap.dequeue());
+// console.log(heap.values);
